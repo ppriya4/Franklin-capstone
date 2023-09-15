@@ -9,7 +9,22 @@ footer .footer {
   max-width: 1200px;
   margin: auto;
 }
+.page > ul {
+  list-style: none;
+  padding-left: 400px;
+}
 
-footer .footer p {
-  margin: 0;
+.footer a {
+  color: white;
+}
+.page ul li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+.wknd{
+  font-size: 30px !important;
+}
+.details a{
+  text-decoration: underline;
 }

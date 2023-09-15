@@ -18,6 +18,13 @@ export default async function decorate(block) {
     // decorate footer DOM
     const footer = document.createElement('div');
     footer.innerHTML = html;
+    
+    const classes = ['wknd', 'page', 'details'];
+    let child = footer.firstElementChild;
+    while (child && classes.length) {
+      child.classList.add(classes.shift());
+      child = child.nextElementSibling;
+    }
 
     decorateIcons(footer);
     block.append(footer);
